@@ -27,8 +27,8 @@ class ToolbarItem extends StatelessWidget {
             type: MaterialType.transparency,
             child: IconButton(
               onPressed: onPressedButton,
-              splashColor: Colors.teal.withOpacity(0.4),
-              highlightColor: Colors.teal.withOpacity(0.4),
+              splashColor: Colors.teal.withValues(alpha: 0.4),
+              highlightColor: Colors.teal.withValues(alpha: 0.4),
               icon: icon is String
                   ? Text(
                       icon,
