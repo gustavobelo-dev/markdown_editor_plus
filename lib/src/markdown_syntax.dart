@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_markdown/flutter_markdown.dart';
+import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import 'package:markdown_editor_plus/widgets/markdown_parse.dart';
 import 'package:markdown/markdown.dart' as md;
 
@@ -36,7 +36,7 @@ class ColoredHastagElementBuilder extends MarkdownElementBuilder {
         margin: const EdgeInsets.only(right: 5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(2),
-          color: Colors.blue.withOpacity(0.1),
+          color: Colors.blue.withValues(alpha: 0.1),
         ),
         child: Text(
           element.textContent,
